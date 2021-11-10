@@ -1014,7 +1014,28 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+.side-logo{
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    top: 20px;
+}
 
+.skill-side-logo{
+    height: 50px;
+    position: absolute;
+    left: -75px;
+}
+
+.asp-dot-net-logo{
+    height: 40px;
+    left: -100px;
+}
+
+.jquery-logo{
+     height: 25px;
+     left: -110px;
+ }
 
 #portfolio, #call-to-action, #testimonials, #contact{
     display: none;
