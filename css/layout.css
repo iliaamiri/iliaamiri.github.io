@@ -325,85 +325,95 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.php {
+  	width: 95%;
+  	-moz-animation: php 2s ease;
+  	-webkit-animation: php 2s ease;
 }
-.illustrator {
+.nodejs {
   	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  	-moz-animation: nodejs 2s ease;
+  	-webkit-animation: nodejs 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.c-sharp {
+  	width: 95%;
+  	-moz-animation: c-sharp 2s ease;
+  	-webkit-animation: c-sharp 2s ease;
 }
-.css {
+.asp-dot-net {
   	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	-moz-animation: asp-dot-net 2s ease;
+  	-webkit-animation: asp-dot-net 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.sql {
+  	width: 85%;
+  	-moz-animation: sql 2s ease;
+  	-webkit-animation: sql 2s ease;
+}.no-sql {
+  	width: 40%;
+  	-moz-animation: no-sql 2s ease;
+  	-webkit-animation: no-sql 2s ease;
 }
 .jquery {
-  	width: 50%;
+  	width: 80%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes php {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 95%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes nodejs {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes c-sharp {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 95%;  }
 }
-@-moz-keyframes css {
+@-moz-keyframes asp-dot-net {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes sql {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 85%;  }
+}@-moz-keyframes no-sql {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 80%;  }
 }
 
-@-webkit-keyframes photoshop {
+@-webkit-keyframes php {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 95%;  }
 }
-@-webkit-keyframes illustrator {
+@-webkit-keyframes nodejs {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes c-sharp {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 95%;  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes asp-dot-net {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes sql {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 85%;  }
+}@-webkit-keyframes no-sql {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
 }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 80%;  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -1004,3 +1014,8 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+
+
+#portfolio, #call-to-action, #testimonials, #contact{
+    display: none;
+}
