@@ -1190,10 +1190,61 @@ footer .social-links li:first-child {
     color: #313131 !important
 }
 
-@media only screen and (max-width: 540px) {
-  .skill-side-logo {
-    display: none;
-  }
+@media only screen and (max-width: 550px) {
+    .skill-side-logo {
+        height: 30px;
+        left: -50px;
+    }
+
+    .asp-dot-net-logo {
+        left: -50px;
+        height: 50%;
+    }
+    .jquery-logo {
+        height: 30%;
+        left: -55px;
+    }
+
+    .side-logo {
+        height: 10%;
+        left: -30px;
+    }
+
+    .basaz-logo {
+        height: 10px;
+    }
+
+    .hwss-logo{
+        height: 50px;
+    }
+
+    .bcit-logo{
+        height: 50px;
+    }
+
+    .freelancer-logo{
+        height: 30px;
+        left: -10px;
+    }
+
+    .classified-logo{
+        height: 50px;
+        left: -30px;
+    }
+
+    .radin-logo{
+        left: -20px;
+    }
+
+    .witcher-logo{
+        left: -20px;
+        height: 40px;
+    }
+
+    .owasp-logo{
+        height: 50px;
+        left: -10px;
+    }
 }
 
 #about .download .github-repo-link {
