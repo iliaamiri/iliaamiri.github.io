@@ -1037,6 +1037,11 @@ footer .social-links li:first-child { margin-left: 0; }
      left: -110px;
  }
 
+.basaz-logo{
+    height: 18px;
+    left: -80px;
+}
+
 #portfolio, #call-to-action, #testimonials, #contact{
     display: none;
 }
