@@ -1336,6 +1336,12 @@ footer .social-links li:first-child {
     color: #313131 !important;
 }
 
+@media only screen and (max-width: 540px) {
+    .skill-side-logo, .side-logo {
+
+    }
+}
+
 
 #about .download .github-repo-link {
     background: linear-gradient(to right, #2b5876 ,#4e4376);
