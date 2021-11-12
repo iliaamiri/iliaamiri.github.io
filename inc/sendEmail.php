@@ -1,5 +1,5 @@
 ﻿<?php
-
+die("nope");
 // Replace this with your own email address
 $siteOwnersEmail = 'user@website.com';
 
