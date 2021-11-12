@@ -1336,10 +1336,6 @@ footer .social-links li:first-child {
     color: #313131 !important;
 }
 
-#portfolio, #call-to-action, #testimonials, #contact {
-    display: none;
-}
-
 
 #about .download .github-repo-link {
     background: linear-gradient(to right, #2b5876 ,#4e4376);
