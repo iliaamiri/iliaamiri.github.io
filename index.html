@@ -1,322 +1,433 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]>
-<html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>
-<html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
 
-    <!--- Basic Page Needs
+    <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
     <title>Ilia Abedianamiri</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Pen-tester, cybersecurity researcher, and full-stack web developer. I am currently enrolled in Full-Stack
+                    Web Development (FSWD) program at
+                    British Columbia Institute of Technology (BCIT).">
+    <meta name="author" content="Ilia Abedianamiri">
 
-    <!-- Mobile Specific Metas
+    <!-- mobile specific metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/layout.min.css">
-    <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" href="css/magnific-popup.css" >
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
 
-    <!-- Script
+    <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-    <!-- Favicons
-     ================================================== -->
-    <link rel="shortcut icon" href="favicon.png">
-
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
-<body>
+<body id="top" class="ss-preload">
 
-<!-- Header
+
+<!-- preloader
 ================================================== -->
-<header id="home">
+<div id="preloader">
+    <div id="loader"></div>
+</div>
 
-    <nav id="nav-wrap">
 
-        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-        <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
-<!--                        <li><a class="smoothscroll" href="#portfolio">Works</a></li>-->
-            <!--            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>-->
-            <!--            <li><a class="smoothscroll" href="#contact">Contact</a></li>-->
-        </ul> <!-- end #nav -->
-
-    </nav> <!-- end #nav-wrap -->
-
-    <div class="row banner">
-        <div class="banner-text">
-            <h1 class="responsive-headline">I'm Ilia Abedianamiri.</h1>
-            <h3>I'm a <span>full-stack web developer</span>, <span>web-master</span>, and
-                <span>cybersecurity researcher</span> learning new things and creating semi-enterprise projects for my
-                individual clients. Welcome to my portfolio.</h3>
-            <hr/>
-            <ul class="social">
-                <li><a href="https://www.linkedin.com/in/eiliya-abedianamiri-b4a093203/" target="_blank"><i
-                        class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/iliaamiri" target="_blank"><i class="fa fa-github"></i></a></li>
+<!-- header
+================================================== -->
+<header class="s-header">
+    <div class="row s-header__nav-wrap">
+        <nav class="s-header__nav">
+            <ul>
+                <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                <li><a class="smoothscroll" href="#about">About</a></li>
+                <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                <li><a class="smoothscroll" href="#publications">Publications</a></li>
+                <li><a class="smoothscroll" href="#readings">Readings</a></li>
+               <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+                <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </div> <!-- end row -->
 
-    <p class="scrolldown">
-        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-    </p>
+    <a class="s-header__menu-toggle" href="#0" title="Menu">
+        <span class="s-header__menu-icon"></span>
+    </a>
+</header> <!-- end s-header -->
 
-</header> <!-- Header End -->
 
-
-<!-- About Section
+<!-- hero
 ================================================== -->
-<section id="about">
+<section id="hero" class="s-hero target-section">
+
+    <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+    <div class="row s-hero__content">
+        <div class="column">
+
+            <div class="s-hero__content-about">
+
+                <h1>I'm Ilia Abedianamiri.</h1>
+
+                <h3>
+                    I'm a <span>full-stack web developer</span>, <span>web-master</span>, and
+                    <span>cybersecurity researcher</span> learning new things and creating semi-enterprise projects for
+                    my
+                    individual clients. Welcome to <a class="smoothscroll" href="#portfolio">my portfolio</a>.
+                </h3>
+
+                <div class="s-hero__content-social">
+                    <a href="https://github.com/iliaamiri"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/ilia_ami/"><i class="fab fa-instagram"
+                                                                     aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/eiliya-abedianamiri-b4a093203/"><i class="fab fa-linkedin"
+                                                                                            aria-hidden="true"></i></a>
+                </div>
+
+            </div> <!-- end s-hero__content-about -->
+
+        </div>
+    </div> <!-- s-hero__content -->
+
+    <div class="s-hero__scroll">
+        <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path
+                            d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+            <span class="scroll-text">Scroll Down</span>
+        </a>
+    </div> <!-- s-hero__scroll -->
+
+</section> <!-- end s-hero -->
+
+
+<!-- about
+================================================== -->
+<section id="about" class="s-about target-section">
 
     <div class="row">
-
-        <div class="three columns">
-
-            <img class="profile-pic lazy" src="" data-src="images/profilepic.jpg" alt=""/>
-
+        <div class="column large-3 tab-12">
+            <img class="s-about__pic" src="images/avatars/user-06.jpg" alt="">
         </div>
-
-        <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>Pen-tester, cybersecurity researcher, and full-stack web developer. I am currently enrolled in Full-Stack
+        <div class="column large-9 tab-12 s-about__content">
+            <h3>About Me</h3>
+            <p>
+                Pen-tester, cybersecurity researcher, and full-stack web developer. I am currently enrolled in
+                Full-Stack
                 Web Development (FSWD) program at
                 British Columbia Institute of Technology (BCIT).
             </p>
 
-            <div class="row">
+            <hr>
 
-                <div class="columns contact-details">
+            <div class="row s-about__content-bottom">
+                <div class="column w-1000-stack">
+                    <h3>Contact Details</h3>
 
-                    <h2>Contact Details</h2>
-                    <p class="address">
-                        <span>Eiliya (Ilia) Abedianamiri</span><br>
-                        <span>989 Nelson St.<br>
-						         Vancouver, BC V6Z 2S1
-                     </span><br>
-                        <span>(778) 862-7477</span><br>
-                        <span>iliaabedianamiri@gmail.com</span>
-                    </p>
-                </div>
-
-                <div class="columns download">
                     <p>
-                        <a href="Eiliya-Abedianamiri.pdf" class="button"><i class="fa fa-download"></i>Download
-                            Resume</a>
-                        <a href="https://github.com/iliaamiri?tab=repositories" class="button github-repo-link"><i class="fa fa-github"></i>  Github Repository</a>
+                        Eiliya (Ilia) Abedianamiri <br>
+                        555 Seymour St. <br>
+                        Vancouver, BC V6B 3H6 CA <br>
+                        <a href="tel:+17788627477">+1 778 862 7477</a> <br>
+                        <a href="mailto:iliaabedianamiri@gmail.com">iliaabedianamiri@gmail.com</a>
                     </p>
+
                 </div>
+                <div class="column w-1000-stack">
+                    <a href="Eiliya-Abedianamiri.pdf" class="btn btn--download">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                             style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                            <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                            <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                        </svg>
+                        Download CV
+                    </a>
 
-            </div> <!-- end row -->
+                    <a href="https://github.com/iliaamiri?tab=repositories" class="btn btn--download github-repo-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                             style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                            <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                            <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                        </svg>
+                        Github Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end row -->
 
-        </div> <!-- end .main-col -->
-
-    </div>
-
-</section> <!-- About Section End-->
+</section> <!-- end s-about -->
 
 
-<!-- Resume Section
+<!-- resume
 ================================================== -->
-<section id="resume">
+<section id="resume" class="s-resume target-section">
 
-    <!-- Education
-    ----------------------------------------------- -->
-    <div class="row education">
-
-        <div class="three columns header-col">
-            <h1><span>Education</span></h1>
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Career</h3>
         </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
 
-        <div class="nine columns main-col">
-
-            <div class="row item">
-
-                <div class="twelve columns">
-                    <img data-src="images/BCIT_logo.png" src="" class="side-logo bcit-logo lazy" alt="">
-                    <h3>DCS / DEC in Full-Stack Web Development - Computer Science</h3>
-                    <p class="info">British Columbia Institute of Technology - Vancouver, BC<span>&bull;</span> <em
-                            class="date">From July 2021 to Present</em></p>
-
-                    <p>
-                        I am currently enrolled in the Full-Stack Web Development (Diploma) program at BCIT. My expected
-                        graduation date is on May 2023.
+                <div class="resume-block__header">
+                    <a href="https://basaz.ca"><img data-src="images/basazLogo.png" src="" class="side-logo lazy basaz-logo" alt=""></a>
+                    <h4 class="h3"><a href="https://basaz.ca">Basaz Construction Ltd.</a></h4>
+                    <p class="resume-block__header-meta">
+                        <span>Full-Stack Web Developer</span>
+                        <span class="resume-block__header-date">
+                                May 2021 - Present <span>&bull;</span> Casual / On Call
+                            </span>
                     </p>
-
                 </div>
 
-            </div> <!-- item end -->
+                <p>
+                    Basaz Construction Inc. will be a building renovation and a construction project management firm in
+                    Canada. It will be responsible for the day-to-day oversight of a building renovations including;
+                    management of vendors, trades, and the communication of information to all involved parties
+                    throughout the course of a construction project.
+                </p>
 
-            <div class="row item">
+            </div> <!-- end resume-block -->
 
-                <div class="twelve columns">
-                    <img data-src="images/Logo_heritagewoods.png" src="" class="side-logo hwss-logo lazy" alt="">
-                    <h3>Technology</h3>
-                    <p class="info">Heritage Woods Secondary School - Port Moody, BC<span>&bull;</span> <em
-                            class="date">From
-                        September 2020 to June 2021</em>
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <h4 class="h3"><a href="https://www.freelancer.ca/">Freelancer</a></h4>
+                    <p class="resume-block__header-meta">
+                        <span>Web App Developer - Vancouver</span>
+                        <span class="resume-block__header-date">
+                                September
+                        2019 - Present
+                             <span>&bull;</span> Casual / On Call</span>
                     </p>
-
-                    <p>
-                        I've studied my senior year and graduated at HWSS.
-                    </p>
-
                 </div>
 
-            </div> <!-- item end -->
 
-        </div> <!-- main-col end -->
+                <p>
+                    I used to work as a freelancer at freelancer.com as a web developer. I created a web-based bot
+                    for one of my customers using my own PHP Framework (Witcher), Selenium, HTML&CSS, and JavaScript
+                    (jQuery). It is available for the public on my Github as a repository.
+                </p>
 
-    </div> <!-- End Education -->
+            </div> <!-- end resume-block -->
 
+            <div class="resume-block">
 
-    <!-- Work
-    ----------------------------------------------- -->
-    <div class="row work">
+                <div class="resume-block__header">
+                    <img data-src="images/Classified-Stamp-PNG.png" src="" class="side-logo classified-logo lazy"
+                         alt="">
+                    <h4 class="h3">For an individual client</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Private Web Developer</span>
+                        <span class="resume-block__header-date">
+                                September
+                        2019 - Present
+                             <span>&bull;</span> Casual / On Call</span>
+                    </p>
+                </div>
 
-        <div class="three columns header-col">
-            <h1><span>Work</span></h1>
+                <p>
+                    An individual hired me as his personal developer to develop his private projects. I was
+                    developing, debugging, and managing the projects. The main technologies I was using were: PHP
+                    (mainly OOP and cURL), JavaScript (jQuery, Ajax, JSON), MySQL (phpMyAdmin), cPanel, Linux, and
+                    Windows Servers (Firewalls, DNS Management,…).<br><br>
+                    Moreover, I had been vastly using Selenium (a portable framework for testing web
+                    applications).<Br><br>
+                    During this period, I was debugging applications written in Node.Js and raw-jQuery as well.
+                    Also, I got familiar enough with bank payment processes and digital currency payment process and
+                    their integration with a web application.
+                </p>
+
+            </div> <!-- end resume-block -->
+
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <img data-src="images/radin-hamkaran-behta-logo.png" src="" class="side-logo radin-logo lazy"
+                         alt="">
+                    <h4 class="h3">Web Application Developer</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Radin Hamkaran Behta Co. – Tehran, Iran</span>
+                        <span class="resume-block__header-date">
+                                June
+                        2018 to June 2019
+                             <span>&bull;</span> Internship</span>
+                    </p>
+                </div>
+
+                <p>
+                    I was an unpaid intern at the company, gaining knowledge and experience in C# and
+                    ASP.NET.<br><br>
+                    Company’s Overview: Radin Hamkaran Behta Co. has been founded in 2010 and registered in 2011. By
+                    employing experienced and experts in the BIM field, our main goal is to design, implement and
+                    develop modern BIM-based engineering and managerial systems.
+                </p>
+
+            </div> <!-- end resume-block -->
+
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <img data-src="images/drkhakbaz.png" src="" class="side-logo drkhakbaz-logo lazy"
+                         alt="">
+                    <h4 class="h3">Website Developer</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Khakbaz Md. Private Clinic Website – Tehran, Iran</span>
+                        <span class="resume-block__header-date">
+                                2017
+                             <span>&bull;</span> Contract</span>
+                    </p>
+                </div>
+
+                <p>
+                    Dr. Khakbaz is an Iranian ophthalmologist who requested a business advertising website for their
+                    clinic. I used PHP to code their website. It is semi-static, including a simple admin panel.
+                </p>
+
+            </div> <!-- end resume-block -->
         </div>
-
-        <div class="nine columns main-col">
-
-            <div class="row item">
-                <a href="https://basaz.ca"><img data-src="images/basazLogo.png" src="" class="side-logo lazy basaz-logo" alt=""></a>
-                <div class="twelve columns">
-                    <h3>Full-Stack Web Developer</h3>
-                    <p class="info"><a href="https://basaz.ca">Basaz Construction Ltd.</a> - Vancouver,
-                        BC<span>&bull;</span> <em class="date">May 2021
-                            to Current <span>&bull;</span> Casual / On Call</em>
-                    </p>
-
-                    <p>
-                        Basaz Construction Inc. will be a building renovation and a construction project
-                        management firm in Canada. It will be responsible for the day-to-day oversight of a
-                        building renovations including; management of vendors, trades, and the communication
-                        of information to all involved parties throughout the course of a construction project.
-                    </p>
-
-                </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-                <div class="twelve columns">
-                    <img data-src="images/freelancer-com-logo-2B5CE1A961-seeklogo.com.png" src="" class="side-logo freelancer-logo lazy" alt="">
-                    <h3>Freelance Web App Developer</h3>
-                    <p class="info"><a href="https://www.freelancer.ca/">Freelancer</a> - Vancouver,
-                        BC<span>&bull;</span> <em class="date">May 2021 to June
-                            2021</em>
-                    </p>
-
-                    <p>
-                        I used to work as a freelancer at freelancer.com as a web developer. I created a web-based bot
-                        for one of my customers using my own PHP Framework (Witcher), Selenium, HTML&CSS, and JavaScript
-                        (jQuery). It is available for the public on my Github as a repository.
-                    </p>
-
-                </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-                <div class="twelve columns">
-                    <img data-src="images/Classified-Stamp-PNG.png" src="" class="side-logo classified-logo lazy" alt="">
-                    <h3>Private Web Developer</h3>
-                    <p class="info">For an individual client – Tehran, Iran<span>&bull;</span> <em class="date">September
-                        2019 to Current <span>&bull;</span> Casual / On Call</em></p>
-
-                    <p>
-                        An individual hired me as his personal developer to develop his private projects. I was
-                        developing, debugging, and managing the projects. The main technologies I was using were: PHP
-                        (mainly OOP and cURL), JavaScript (jQuery, Ajax, JSON), MySQL (phpMyAdmin), cPanel, Linux, and
-                        Windows Servers (Firewalls, DNS Management,…).<br><br>
-                        Moreover, I had been vastly using Selenium (a portable framework for testing web
-                        applications).<Br><br>
-                        During this period, I was debugging applications written in Node.Js and raw-jQuery as well.
-                        Also, I got familiar enough with bank payment processes and digital currency payment process and
-                        their integration with a web application.
-                    </p>
-
-                </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-                <div class="twelve columns">
-                    <img data-src="images/radin-hamkaran-behta-logo.png" src="" class="side-logo radin-logo lazy" alt="">
-                    <h3>Web Application Developer</h3>
-                    <p class="info">Radin Hamkaran Behta Co. – Tehran, Iran<span>&bull;</span> <em class="date">June
-                        2018 to June 2019<span>&bull;</span> Internship</em></p>
-
-                    <p>
-                        I was an unpaid intern at the company, gaining knowledge and experience in C# and
-                        ASP.NET.<br><br>
-                        Company’s Overview: Radin Hamkaran Behta Co. has been founded in 2010 and registered in 2011. By
-                        employing experienced and experts in the BIM field, our main goal is to design, implement and
-                        develop modern BIM-based engineering and managerial systems.
-                    </p>
-
-                </div>
-
-            </div> <!-- item end -->
+    </div> <!-- s-resume__section -->
 
 
-            <div class="row item">
+<!--    <div class="row s-resume__section">-->
+<!--        <div class="column large-3 tab-12">-->
+<!--            <h3 class="section-header-allcaps">Education</h3>-->
+<!--        </div>-->
+<!--        <div class="column large-9 tab-12">-->
+<!--            <div class="resume-block">-->
 
-                <div class="twelve columns">
-                    <h3>Website Developer</h3>
-                    <p class="info">Khakbaz Md. Private Clinic Website – Tehran, Iran<span>&bull;</span> <em
-                            class="date">2017 (Contract)</em></p>
+<!--                <div class="resume-block__header">-->
+<!--                    <h4 class="h3">University of Life</h4>-->
+<!--                    <p class="resume-block__header-meta">-->
+<!--                        <span>Master in Graphic Design</span>-->
+<!--                        <span class="resume-block__header-date">-->
+<!--                                April 2015-->
+<!--                            </span>-->
+<!--                    </p>-->
+<!--                </div>-->
 
-                    <p>
-                        Dr. Khakbaz is an Iranian ophthalmologist who requested a business advertising website for their
-                        clinic. I used PHP to code their website. It is semi-static, including a simple admin panel.
-                    </p>
+<!--                <p>-->
+<!--                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore-->
+<!--                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae-->
+<!--                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam-->
+<!--                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.-->
+<!--                </p>-->
 
-                </div>
+<!--            </div> &lt;!&ndash; end resume-block &ndash;&gt;-->
 
-            </div> <!-- item end -->
+<!--            <div class="resume-block">-->
 
-        </div> <!-- main-col end -->
+<!--                <div class="resume-block__header">-->
+<!--                    <h4 class="h3">School of Cool Designers</h4>-->
+<!--                    <p class="resume-block__header-meta">-->
+<!--                        <span>B.A. Degree in Graphic Design</span>-->
+<!--                        <span class="resume-block__header-date">-->
+<!--                                August 2012-->
+<!--                            </span>-->
+<!--                    </p>-->
+<!--                </div>-->
 
-    </div> <!-- End Work -->
+<!--                <p>-->
+<!--                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore-->
+<!--                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae-->
+<!--                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam-->
+<!--                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.-->
+<!--                </p>-->
 
-    <!-- Publications
-    ----------------------------------------------- -->
-    <div class="row publications">
+<!--            </div> &lt;!&ndash; end resume-block &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; s-resume__section &ndash;&gt;-->
 
-        <div class="three columns header-col">
-            <h1><span>Publications</span></h1>
+
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Skills</h3>
         </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
 
-        <div class="nine columns main-col">
-            <div class="row item">
+                <p>
+                    My skills include but not limited to:
+                </p>
 
-                <div class="twelve columns">
+                <ul class="skill-bars-fat">
+                    <li>
+                        <img data-src="images/skills/Webysther_20160423_-_Elephpant.svg.png" src="" class="skill-side-logo lazy"
+                             alt="">
+                        <div class="progress percent95"></div>
+                        <strong>PHP</strong>
+                    </li>
+                    <li>
+                        <img data-src="images/skills/nodejs-1-logo.png" src="" class="skill-side-logo lazy" alt="">
+                        <div class="progress percent65"></div>
+                        <strong>Node.js</strong>
+                    </li>
+                    <li>
+                        <img data-src="images/skills/c-sharp.svg" src="" class="skill-side-logo lazy" alt="">
+                        <div class="progress percent95"></div>
+                        <strong>C#</strong>
+                    </li>
+                    <li>
+                        <img data-src="images/skills/asp.net-logo-MSA-Technosoft.png" src=""
+                        class="skill-side-logo lazy asp-dot-net-logo" alt="">
+                        <div class="progress percent90"></div>
+                        <strong>ASP.NET</strong>
+                    </li>
+                    <li>
+                        <img data-src="images/skills/sql.png" src=""
+                             class="skill-side-logo lazy" alt="">
+                        <div class="progress percent85"></div>
+                        <strong>SQL Databases (MySql, SQL Server, SqLite, etc.)</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent40"></div>
+                        <strong>No-SQL Databases (MongoDB)</strong>
+                    </li>
+                    <li>
+                        <img data-src="images/skills/jquery.png" src="" class="skill-side-logo lazy jquery-logo" alt="">
+                        <div class="progress percent40"></div>
+                        <strong>JQuery</strong>
+                    </li>
+                </ul>
+
+            </div> <!-- end resume-block -->
+
+        </div>
+    </div> <!-- s-resume__section -->
+
+</section> <!-- end s-resume -->
+
+<!-- publications
+================================================== -->
+<section id="publications" class="s-portfolio target-section">
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Readings</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
+
+                <div class="resume-block__header">
                     <img data-src="images/witcherLogo.png" src="" class="side-logo witcher-logo lazy" alt="">
-                    <h3>Witcher - PHP Framework</h3>
-                    <p class="info"><a href="https://github.com/iliaamiri/WitcherPhpFramework">Github
-                        Repository</a><span>&bull;</span> <em class="date">2017 - Current</em></p>
+                    <h4 class="h3">Witcher - PHP Framework</h4>
+                    <p class="resume-block__header-meta"><span><a href="https://github.com/iliaamiri/WitcherPhpFramework">Github
+                        Repository</a></span>
+                        <span class="resume-block__header-date">
+                               <em class="date">2017 - Current</em>
+                            </span>
+                    </p>
 
                     <p>
                         Witcher is a Framework in PHP coded by me. I created my own Framework using raw PHP, so this
@@ -324,689 +435,527 @@
                         projects.
                     </p>
                     <ul>
-                        <li>• It uses the MVC software architecture (Model, View, Controller).</li>
-                        <li>• It is compatible with PHP 7.0 or higher.</li>
+                        <li> It uses the MVC software architecture (Model, View, Controller).</li>
+                        <li> It is compatible with PHP 7.0 or higher.</li>
                     </ul>
-
                 </div>
 
-            </div> <!-- item end -->
+            </div> <!-- end resume-block -->
 
-            <div class="row item">
+            <div class="resume-block">
 
-                <div class="twelve columns">
-                    <h3>Lottery Game Website</h3>
-                    <p class="info"><a href="https://github.com/iliaamiri/A-Lottery-Game-Website">Github
-                        Repository</a><span>&bull;</span> <em class="date">2017 (3 months)</em></p>
+                <div class="resume-block__header">
+                    <h4 class="h3">Lottery Game Website</h4>
+                    <p class="resume-block__header-meta">
+                        <span>
+                        <a href="https://github.com/iliaamiri/A-Lottery-Game-Website">Github
+                        Repository</a></span>
+                        <span class="resume-block__header-date">
+                               <em class="date">2017 (3 months)</em>
+                            </span>
 
                     <p>
                         A lottery game webapp has a backend code in PHP (using Witcher Framework), and simple front-ends
                         using basic HTML, CSS, and JavaScript. I coded this website for an individual client of mine
                         back in 2018.
                     </p>
-
+                    </p>
                 </div>
 
-            </div> <!-- item end -->
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- s-resume__section -->
+</section>
+
+<!-- portfolio
+================================================== -->
+<!--<section id="portfolio" class="s-portfolio target-section">-->
+
+<!--    <div class="row s-portfolio__header">-->
+<!--        <div class="column large-12">-->
+<!--            <h3>A Few Of Publications</h3>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-01" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/droplet.jpg"-->
+<!--                     srcset="images/portfolio/droplet.jpg 1x,-->
+<!--                                 images/portfolio/droplet@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-02" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/lamp.jpg"-->
+<!--                     srcset="images/portfolio/lamp.jpg 1x,-->
+<!--                                 images/portfolio/lamp@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-03" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/minimalismo.jpg"-->
+<!--                     srcset="images/portfolio/minimalismo.jpg 1x,-->
+<!--                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-04" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/shutterbug.jpg"-->
+<!--                     srcset="images/portfolio/shutterbug.jpg 1x,-->
+<!--                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-05" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/fuji.jpg"-->
+<!--                     srcset="images/portfolio/fuji.jpg 1x,-->
+<!--                                 images/portfolio/fuji@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-06" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/skaterboy.jpg"-->
+<!--                     srcset="images/portfolio/skaterboy.jpg 1x,-->
+<!--                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-07" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/rucksack.jpg"-->
+<!--                     srcset="images/portfolio/rucksack.jpg 1x,-->
+<!--                                 images/portfolio/rucksack@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--        <div class="column folio-item">-->
+<!--            <a href="#modal-08" class="folio-item__thumb">-->
+<!--                <img src="images/portfolio/sanddunes.jpg"-->
+<!--                     srcset="images/portfolio/sanddunes.jpg 1x,-->
+<!--                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">-->
+<!--            </a>-->
+<!--        </div> &lt;!&ndash; end folio-item &ndash;&gt;-->
+
+<!--    </div> &lt;!&ndash; end folio-list &ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; Modal Templates Popup-->
+<!--    =========================================================== &ndash;&gt;-->
+<!--    <div id="modal-01" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-droplet.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Droplet</h5>-->
+<!--                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda-->
+<!--                    iure et expedita voluptatem. Ratione officiis quae.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Branding</li>-->
+<!--                    <li>Product Design</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-02" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-lamp.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>The Lamp</h5>-->
+<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Branding</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-03" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Minimalismo</h5>-->
+<!--                <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti-->
+<!--                    illum velit eveniet ratione necessitatibus ipsam mollitia.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Product Design</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-04" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-shutterbug.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Shutterbug</h5>-->
+<!--                <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas-->
+<!--                    voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>E-Commerce</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-05" hidden>-->
+<!--        <div class="modal-popup">-->
+
+<!--            <img src="images/portfolio/gallery/g-fuji.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Fuji</h5>-->
+<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Product Design</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-06" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-skaterboy.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Skaterboy</h5>-->
+<!--                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate-->
+<!--                    voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Branding</li>-->
+<!--                    <li>Product Design</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-07" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-rucksack.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Rucksack</h5>-->
+<!--                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda-->
+<!--                    iure et expedita voluptatem. Ratione officiis quae.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Branding</li>-->
+<!--                    <li>Product Design</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+<!--    <div id="modal-08" hidden>-->
+<!--        <div class="modal-popup">-->
+<!--            <img src="images/portfolio/gallery/g-sanddunes.jpg" alt=""/>-->
+
+<!--            <div class="modal-popup__desc">-->
+<!--                <h5>Sand Dunes</h5>-->
+<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--                <ul class="modal-popup__cat">-->
+<!--                    <li>Web Design</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end modal &ndash;&gt;-->
+
+
+<!--</section> &lt;!&ndash; end s-portfolio &ndash;&gt;-->
+
+<!-- readings
+================================================== -->
+<section id="readings" class="s-portfolio target-section">
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Readings</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <img data-src="images/owaspLogo.png" src="" class="side-logo owasp-logo lazy" alt="">
+                    <h4 class="h3"><a href="https://owasp.org/www-project-web-security-testing-guide/" class="readings-anchor">OWASP
+                        Web Security Testing Guide v4</a></h4>
+                    <p class="resume-block__header-meta"><span>By the OWASP®
+                        Foundation</span>
+                        <span class="resume-block__header-date">
+                               Read in 2018
+                            </span>
+                    </p>
+                </div>
+
+            </div> <!-- end resume-block -->
+
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <h4 class="h3"><a target="_blank" class="readings-anchor"
+                                      href="https://ketabiyar.com/%DA%A9%D8%AA%D8%A7%D8%A8-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-c-%D9%85%D8%A8%D8%AA%D8%AF%DB%8C-%D8%AA%D8%A7-%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%D9%87-%D8%AA%D8%A7%D9%84%DB%8C%D9%81-%D8%A7%D8%B3%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%B4%D8%A7%D9%87-%D8%A8%D9%87%D8%B1%D8%A7%D9%85%DB%8C">Applied
+                        training in C# programming language (in Farsi)</a></h4>
+                    <p class="resume-block__header-meta">
+                        <span>
+                        By <a
+                            href="https://eng.guilan.ac.ir/en/~shahbahrami">Asadollah Shahbahrami</a> and
+                        Erfan Zidehsaraei</span>
+                        <span class="resume-block__header-date">
+                                Read in 2016
+                            </span>
+                    </p>
+                </div>
+
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- s-resume__section -->
+</section>
+
+<!-- CTA
+================================================== -->
+<!--<section class="s-cta">-->
+
+<!--    <div class="row">-->
+<!--        <div class="column">-->
+<!--            <h3 class="h2 section-desc">-->
+<!--                Need a great reliable web hosting?-->
+<!--            </h3>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end heading-block &ndash;&gt;-->
+
+<!--    <div class="row cta-content">-->
+<!--        <div class="column">-->
+<!--            <p>-->
+<!--                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.-->
+<!--                Powerful web and Wordpress hosting. Guaranteed.-->
+<!--                Starting at $2.95 per month.-->
+<!--            </p>-->
+
+<!--            <a href="https://www.dreamhost.com/r.cgi?287326" class="btn btn&#45;&#45;primary h-full-width">Get Started</a>-->
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; end cta-content &ndash;&gt;-->
+
+<!--</section> &lt;!&ndash; end s-cta &ndash;&gt;-->
+
+
+<!-- testimonials
+================================================== -->
+<!--<section id="testimonials" class="s-testimonials target-section">-->
+
+<!--    <div class="s-testimonials__bg"></div>-->
+
+<!--    <div class="row s-testimonials__header">-->
+<!--        <div class="column large-12">-->
+<!--            <h3>Hear What My Clients Says</h3>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="row s-testimonials__content">-->
+
+<!--        <div class="column">-->
+
+<!--            <div class="swiper-container testimonial-slider">-->
+
+<!--                <div class="swiper-wrapper">-->
+
+<!--                    <div class="testimonial-slider__slide swiper-slide">-->
+<!--                        <div class="testimonial-slider__author">-->
+<!--                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">-->
+<!--                            <cite class="testimonial-slider__cite">-->
+<!--                                <strong>Tim Cook</strong>-->
+<!--                                <span>CEO, Apple</span>-->
+<!--                            </cite>-->
+<!--                        </div>-->
+<!--                        <p>-->
+<!--                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.-->
+<!--                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat-->
+<!--                            fuga rem nihil nostrum.-->
+<!--                            Laudantium quia consequatur molestias delectus culpa.-->
+<!--                        </p>-->
+<!--                    </div> &lt;!&ndash; end testimonial-slider__slide &ndash;&gt;-->
+
+<!--                    <div class="testimonial-slider__slide swiper-slide">-->
+<!--                        <div class="testimonial-slider__author">-->
+<!--                            <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">-->
+<!--                            <cite class="testimonial-slider__cite">-->
+<!--                                <strong>Sundar Pichai</strong>-->
+<!--                                <span>CEO, Google</span>-->
+<!--                            </cite>-->
+<!--                        </div>-->
+<!--                        <p>-->
+<!--                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas-->
+<!--                            animi adipisci.-->
+<!--                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.-->
+<!--                            Quasi voluptas eius distinctio. Atque eos maxime.-->
+<!--                        </p>-->
+<!--                    </div> &lt;!&ndash; end testimonial-slider__slide &ndash;&gt;-->
+
+<!--                    <div class="testimonial-slider__slide swiper-slide">-->
+<!--                        <div class="testimonial-slider__author">-->
+<!--                            <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">-->
+<!--                            <cite class="testimonial-slider__cite">-->
+<!--                                <strong>Satya Nadella</strong>-->
+<!--                                <span>CEO, Microsoft</span>-->
+<!--                            </cite>-->
+<!--                        </div>-->
+<!--                        <p>-->
+<!--                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia-->
+<!--                            nesciunt. Ducimus aut sed ipsam.-->
+<!--                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius-->
+<!--                            distinctio.-->
+<!--                            Voluptatem dignissimos ut.-->
+<!--                        </p>-->
+<!--                    </div> &lt;!&ndash; end testimonial-slider__slide &ndash;&gt;-->
+
+<!--                    <div class="testimonial-slider__slide swiper-slide">-->
+<!--                        <div class="testimonial-slider__author">-->
+<!--                            <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">-->
+<!--                            <cite class="testimonial-slider__cite">-->
+<!--                                <strong>Jeff Bezos</strong>-->
+<!--                                <span>CEO, Amazon</span>-->
+<!--                            </cite>-->
+<!--                        </div>-->
+<!--                        <p>-->
+<!--                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac-->
+<!--                            felis-->
+<!--                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti-->
+<!--                            expedita voluptas odit.-->
+<!--                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.-->
+<!--                        </p>-->
+<!--                    </div> &lt;!&ndash; end testimonial-slider__slide &ndash;&gt;-->
+
+<!--                </div> &lt;!&ndash; end testimonial slider swiper-wrapper &ndash;&gt;-->
+
+<!--                <div class="swiper-pagination"></div>-->
+
+<!--            </div> &lt;!&ndash; end swiper-container &ndash;&gt;-->
+
+<!--        </div> &lt;!&ndash; end column &ndash;&gt;-->
+
+<!--    </div> &lt;!&ndash; end row &ndash;&gt;-->
+
+<!--</section> &lt;!&ndash; end s-testimonials &ndash;&gt;-->
+
+
+<!-- contact
+================================================== -->
+<section id="contact" class="s-contact target-section">
+
+    <div class="row s-contact__header">
+        <div class="column large-12">
+            <h3 class="section-header-allcaps">Say Hello</h3>
         </div>
     </div>
 
+    <div class="row s-contact__content">
 
-    <!-- Skills
-    ----------------------------------------------- -->
-    <div class="row skill">
+        <div class="column large-7 medium-12">
 
-        <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h4 class="huge-text">
+                Have a new project in mind? Let's collaborate and build something awesome.
+                Let's turn that idea to an even greater product :)
+            </h4>
+
         </div>
 
-        <div class="nine columns main-col">
+        <div class="column large-4 medium-12">
 
-            <p>My skills include but not limited to:
-            </p>
-
-            <div class="bars">
-
-                <ul class="skills">
-                    <li>
-                        <img data-src="images/skills/Webysther_20160423_-_Elephpant.svg.png" src="" class="skill-side-logo lazy"
-                             alt="">
-                        <span class="bar-expand php"></span><em>PHP</em>
-                    </li>
-                    <li>
-                        <img data-src="images/skills/nodejs-1-logo.png" src="" class="skill-side-logo lazy" alt="">
-                        <span class="bar-expand nodejs"></span><em>Node.js</em>
-                    </li>
-                    <li>
-                        <img data-src="images/skills/c-sharp.svg" src="" class="skill-side-logo lazy" alt="">
-                        <span class="bar-expand c-sharp"></span><em>C#</em>
-                    </li>
-                    <li>
-                        <img data-src="images/skills/asp.net-logo-MSA-Technosoft.png" src=""
-                             class="skill-side-logo lazy asp-dot-net-logo" alt="">
-                        <span class="bar-expand asp-dot-net"></span><em>ASP.NET</em>
-                    </li>
-                    <li>
-                        <img data-src="images/skills/sql.png" src=""
-                             class="skill-side-logo lazy" alt="">
-                        <span class="bar-expand sql"></span><em>SQL Databases (MySql, SQL Server, SqLite, etc.)</em>
-                    </li>
-                    <li><span class="bar-expand no-sql"></span><em>No-SQL Databases (MongoDB)</em></li>
-                    <li>
-                        <img data-src="images/skills/jquery.png" src="" class="skill-side-logo lazy jquery-logo" alt="">
-                        <span class="bar-expand jquery"></span><em>JQuery</em>
-                    </li>
-                    <!--                    <li><span class="bar-expand apis"></span><em>APIs</em></li>-->
-                    <!--                    <li><span class="bar-expand linux"></span><em>Linux</em></li>-->
-                    <!--                    <li><span class="bar-expand windows"></span><em>Windows</em></li>-->
-                    <!--                    <li><span class="bar-expand aws"></span><em>AWS</em></li>-->
-                    <!--                    <li><span class="bar-expand docker"></span><em>Docker</em></li>-->
-                    <!--                    <li><span class="bar-expand network"></span><em>Network</em></li>-->
-                    <!--                    <li><span class="bar-expand agile"></span><em>Agile</em></li>-->
-                </ul>
-
-            </div><!-- end skill-bars -->
-
-        </div> <!-- main-col end -->
-
-    </div> <!-- End skills -->
-
-    <!-- Readings
-   ----------------------------------------------- -->
-    <div class="row readings">
-
-        <div class="three columns header-col">
-            <h1><span>Readings</span></h1>
-        </div>
-
-        <div class="nine columns main-col">
-            <div class="row item">
-
-                <div class="twelve columns">
-                    <img data-src="images/owaspLogo.png" src="" class="side-logo owasp-logo lazy" alt="">
-                    <h3><a href="https://owasp.org/www-project-web-security-testing-guide/" class="readings-anchor">OWASP Web Security Testing Guide v4</a></h3>
-                    <p class="info">By the OWASP®
-                        Foundation<span>&bull;</span>
-                        <em class="date">Read in 2018</em></p>
-
+            <div class="row contact-infos">
+                <div class="column large-12 medium-6 tab-12">
+                    <div class="contact-block">
+                        <h5 class="contact-block__header">
+                            Email
+                        </h5>
+                        <p class="contact-block__content">
+                            <a class="mailtoui" href="mailto:iliaabedianamiri@gmail.com">iliaabedianamiri@gmail.com</a>
+                        </p>
+                    </div> <!-- end contact-block -->
+                </div>
+                <div class="column large-12 medium-6 tab-12">
+                    <div class="contact-block">
+                        <h5 class="contact-block__header">
+                            Phone
+                        </h5>
+                        <p class="contact-block__content">
+                            <a href="tel:+17788627477">+1 778 862 7477</a>
+                        </p>
+                    </div> <!-- end contact-block -->
                 </div>
 
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-                <div class="twelve columns">
-
-                    <h3>
-                        <a target="_blank" class="readings-anchor" href="https://ketabiyar.com/%DA%A9%D8%AA%D8%A7%D8%A8-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-c-%D9%85%D8%A8%D8%AA%D8%AF%DB%8C-%D8%AA%D8%A7-%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%D9%87-%D8%AA%D8%A7%D9%84%DB%8C%D9%81-%D8%A7%D8%B3%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%B4%D8%A7%D9%87-%D8%A8%D9%87%D8%B1%D8%A7%D9%85%DB%8C">Applied
-                        training in C# programming language (in Farsi)</a></h3>
-                    <p class="info">By <a
-                            href="https://eng.guilan.ac.ir/en/~shahbahrami">Asadollah Shahbahrami</a> and
-                        Erfan Zidehsaraei<span>&bull;</span>
-                        <em class="date">Read in 2016</em></p>
-
+                <div class="column large-12">
+                    <a href="mailto:iliaabedianamiri@gmail.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
                 </div>
+            </div> <!-- end contact-infos -->
 
-            </div> <!-- item end -->
         </div>
-    </div><!-- End readings -->
+    </div> <!-- s-contact__content -->
 
-</section> <!-- Resume Section End-->
-
-
-<!-- Portfolio Section
-================================================== -->
-<!--<section id="portfolio">-->
-
-<!--    <div class="row">-->
-
-<!--        <div class="twelve columns collapsed">-->
-
-<!--            <h1>Check Out Some of My Works.</h1>-->
-
-<!--            &lt;!&ndash; portfolio-wrapper &ndash;&gt;-->
-<!--            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-01" title="">-->
-<!--                            <img alt="" src="images/portfolio/coffee.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Coffee</h5>-->
-<!--                                    <p>Illustrration</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-02" title="">-->
-<!--                            <img alt="" src="images/portfolio/console.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Console</h5>-->
-<!--                                    <p>Web Development</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-03" title="">-->
-<!--                            <img alt="" src="images/portfolio/judah.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Judah</h5>-->
-<!--                                    <p>Webdesign</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-04" title="">-->
-<!--                            <img alt="" src="images/portfolio/into-the-light.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Into The Light</h5>-->
-<!--                                    <p>Photography</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-05" title="">-->
-<!--                            <img alt="" src="images/portfolio/farmerboy.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Farmer Boy</h5>-->
-<!--                                    <p>Branding</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-06" title="">-->
-<!--                            <img alt="" src="images/portfolio/girl.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Girl</h5>-->
-<!--                                    <p>Photography</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-07" title="">-->
-<!--                            <img alt="" src="images/portfolio/origami.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Origami</h5>-->
-<!--                                    <p>Illustrration</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--                <div class="columns portfolio-item">-->
-<!--                    <div class="item-wrap">-->
-
-<!--                        <a href="#modal-08" title="">-->
-<!--                            <img alt="" src="images/portfolio/retrocam.jpg">-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="portfolio-item-meta">-->
-<!--                                    <h5>Retrocam</h5>-->
-<!--                                    <p>Web Development</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                </div>  &lt;!&ndash; item end &ndash;&gt;-->
-
-<!--            </div> &lt;!&ndash; portfolio-wrapper end &ndash;&gt;-->
-
-<!--        </div> &lt;!&ndash; twelve columns end &ndash;&gt;-->
-
-
-<!--        &lt;!&ndash; Modal Popup-->
-<!--         -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;-->
-
-<!--        <div id="modal-01" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Coffee Cup</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
-
-<!--        <div id="modal-02" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Console</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-02 End &ndash;&gt;-->
-
-<!--        <div id="modal-03" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Judah</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Branding</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-03 End &ndash;&gt;-->
-
-<!--        <div id="modal-04" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Into the Light</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-04 End &ndash;&gt;-->
-
-<!--        <div id="modal-05" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Farmer Boy</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-05 End &ndash;&gt;-->
-
-<!--        <div id="modal-06" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Girl</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-06 End &ndash;&gt;-->
-
-<!--        <div id="modal-07" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Origami</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-07 End &ndash;&gt;-->
-
-<!--        <div id="modal-08" class="popup-modal mfp-hide">-->
-
-<!--            <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt=""/>-->
-
-<!--            <div class="description-box">-->
-<!--                <h4>Retrocam</h4>-->
-<!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
-<!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
-<!--                <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>-->
-<!--            </div>-->
-
-<!--            <div class="link-box">-->
-<!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
-<!--                <a class="popup-modal-dismiss">Close</a>-->
-<!--            </div>-->
-
-<!--        </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
-
-
-<!--    </div> &lt;!&ndash; row End &ndash;&gt;-->
-
-<!--</section> &lt;!&ndash; Portfolio Section End&ndash;&gt;-->
-
-
-<!-- Call-To-Action Section
-================================================== -->
-<!--<section id="call-to-action">-->
-
-<!--    <div class="row">-->
-
-<!--        <div class="two columns header-col">-->
-
-<!--            <h1><span>Get Hosting.</span></h1>-->
-
-<!--        </div>-->
-
-<!--        <div class="seven columns">-->
-
-<!--            <h2><span class="lead">Unde Omnis Iste</span></h2>-->
-<!--            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
-<!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>-->
-
-<!--        </div>-->
-
-<!--        <div class="three columns action">-->
-
-
-<!--        </div>-->
-
-<!--    </div>-->
-
-<!--</section> &lt;!&ndash; Call-To-Action Section End&ndash;&gt;-->
-
-
-<!-- Testimonials Section
-================================================== -->
-<!--<section id="testimonials">-->
-
-<!--    <div class="text-container">-->
-
-<!--        <div class="row">-->
-
-<!--            <div class="two columns header-col">-->
-
-<!--                <h1><span>Client Testimonials</span></h1>-->
-
-<!--            </div>-->
-
-<!--            <div class="ten columns flex-container">-->
-
-<!--                <div class="flexslider">-->
-
-<!--                    <ul class="slides">-->
-
-<!--                        <li>-->
-<!--                            <blockquote>-->
-<!--                                <p>Your work is going to fill a large part of your life, and the only way to be truly-->
-<!--                                    satisfied is-->
-<!--                                    to do what you believe is great work. And the only way to do great work is to love-->
-<!--                                    what you do.-->
-<!--                                    If you haven't found it yet, keep looking. Don't settle. As with all matters of the-->
-<!--                                    heart, you'll know when you find it.-->
-<!--                                </p>-->
-<!--                                <cite>Steve Jobs</cite>-->
-<!--                            </blockquote>-->
-<!--                        </li> &lt;!&ndash; slide ends &ndash;&gt;-->
-
-<!--                        <li>-->
-<!--                            <blockquote>-->
-<!--                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor-->
-<!--                                    aliquet.-->
-<!--                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec-->
-<!--                                    sagittis sem-->
-<!--                                    nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.-->
-<!--                                </p>-->
-<!--                                <cite>Mr. Adobe</cite>-->
-<!--                            </blockquote>-->
-<!--                        </li> &lt;!&ndash; slide ends &ndash;&gt;-->
-
-<!--                    </ul>-->
-
-<!--                </div> &lt;!&ndash; div.flexslider ends &ndash;&gt;-->
-
-<!--            </div> &lt;!&ndash; div.flex-container ends &ndash;&gt;-->
-
-<!--        </div> &lt;!&ndash; row ends &ndash;&gt;-->
-
-<!--    </div>  &lt;!&ndash; text-container ends &ndash;&gt;-->
-
-<!--</section> &lt;!&ndash; Testimonials Section End&ndash;&gt;-->
-
-
-<!-- Contact Section
-================================================== -->
-<!--<section id="contact">-->
-
-<!--    <div class="row section-head">-->
-
-<!--        <div class="two columns header-col">-->
-
-<!--            <h1><span>Get In Touch.</span></h1>-->
-
-<!--        </div>-->
-
-<!--        <div class="ten columns">-->
-
-<!--            <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque-->
-<!--                laudantium, totam rem aperiam,-->
-<!--                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo-->
-<!--                enim ipsam-->
-<!--                voluptatem quia voluptas sit aspernatur aut odit aut fugit.-->
-<!--            </p>-->
-
-<!--        </div>-->
-
-<!--    </div>-->
-
-<!--    <div class="row">-->
-
-<!--        <div class="eight columns">-->
-
-<!--            &lt;!&ndash; form &ndash;&gt;-->
-<!--            <form action="" method="post" id="contactForm" name="contactForm">-->
-<!--                <fieldset>-->
-
-<!--                    <div>-->
-<!--                        <label for="contactName">Name <span class="required">*</span></label>-->
-<!--                        <input type="text" value="" size="35" id="contactName" name="contactName">-->
-<!--                    </div>-->
-
-<!--                    <div>-->
-<!--                        <label for="contactEmail">Email <span class="required">*</span></label>-->
-<!--                        <input type="text" value="" size="35" id="contactEmail" name="contactEmail">-->
-<!--                    </div>-->
-
-<!--                    <div>-->
-<!--                        <label for="contactSubject">Subject</label>-->
-<!--                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject">-->
-<!--                    </div>-->
-
-<!--                    <div>-->
-<!--                        <label for="contactMessage">Message <span class="required">*</span></label>-->
-<!--                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>-->
-<!--                    </div>-->
-
-<!--                    <div>-->
-<!--                        <button class="submit">Submit</button>-->
-<!--                        <span id="image-loader">-->
-<!--                        <img alt="" src="images/loader.gif">-->
-<!--                     </span>-->
-<!--                    </div>-->
-
-<!--                </fieldset>-->
-<!--            </form> &lt;!&ndash; Form End &ndash;&gt;-->
-
-<!--            &lt;!&ndash; contact-warning &ndash;&gt;-->
-<!--            <div id="message-warning"> Error boy</div>-->
-<!--            &lt;!&ndash; contact-success &ndash;&gt;-->
-<!--            <div id="message-success">-->
-<!--                <i class="fa fa-check"></i>Your message was sent, thank you!<br>-->
-<!--            </div>-->
-
-<!--        </div>-->
-
-
-<!--        <aside class="four columns footer-widgets">-->
-
-<!--            <div class="widget widget_contact">-->
-
-<!--                <h4>Address and Phone</h4>-->
-<!--                <p class="address">-->
-<!--                    Jonathan Doe<br>-->
-<!--                    1600 Amphitheatre Parkway <br>-->
-<!--                    Mountain View, CA 94043 US<br>-->
-<!--                    <span>(123) 456-7890</span>-->
-<!--                </p>-->
-
-<!--            </div>-->
-
-<!--            <div class="widget widget_tweets">-->
-
-<!--                <h4 class="widget-title">Latest Tweets</h4>-->
-
-<!--                <ul id="twitter">-->
-<!--                    <li>-->
-<!--                        <span>-->
-<!--                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
-<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum-->
-<!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
-<!--                        </span>-->
-<!--                        <b><a href="#">2 Days Ago</a></b>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <span>-->
-<!--                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
-<!--                        eaque ipsa quae ab illo inventore veritatis et quasi-->
-<!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
-<!--                        </span>-->
-<!--                        <b><a href="#">3 Days Ago</a></b>-->
-<!--                    </li>-->
-<!--                </ul>-->
-
-<!--            </div>-->
-
-<!--        </aside>-->
-
-<!--    </div>-->
-
-<!--</section> &lt;!&ndash; Contact Section End&ndash;&gt;-->
+</section> <!-- end s-contact -->
 
 
 <!-- footer
 ================================================== -->
-<footer>
-
+<footer class="s-footer">
     <div class="row">
-
-        <div class="twelve columns">
-
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/eiliya-abedianamiri-b4a093203/" target="_blank"><i
-                        class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/iliaamiri" target="_blank"><i class="fa fa-github"></i></a></li>
+        <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+            <ul class="s-footer__social">
+<!--                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>-->
+<!--                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>-->
+                <li><a target="_blank" href="https://github.com/iliaamiri"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/ilia_ami/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/eiliya-abedianamiri-b4a093203/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
             </ul>
-
-            <ul class="copyright">
-                <li>&copy; Copyright 2014 CeeVee</li>
-                <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a>
-                </li>
-            </ul>
-
         </div>
 
-        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+        <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+            <span>© Copyright Eiliya Abedianamiri 2021</span>
+            <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+        </div>
     </div>
 
-</footer> <!-- Footer End-->
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/>
+            </svg>
+        </a>
+    </div> <!-- end ss-go-top -->
+</footer>
+
 
 <!-- Java Script
 ================================================== -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/magnific-popup.js"></script>
-<script src="js/init.js"></script>
-<script src="js/lazyload.js"></script>
-</body>
+<script src="js/plugins.js"></script>
+<script src="js/main.min.js"></script>
 
+<!-- My Lazy Load -->
+<script src="js/lazyload.js"></script>
+
+</body>
 </html>
