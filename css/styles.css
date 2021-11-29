@@ -4807,7 +4807,6 @@ input[type="button"].btn--primary:focus {
 .github-repo-link {
     background: linear-gradient(to right, #2b5876, #4e4376);
     color: #fff;
-    padding: 0px 0px 0px 10px;
 }
 
 .github-repo-link:hover {
